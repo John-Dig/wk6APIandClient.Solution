@@ -46,7 +46,7 @@ namespace CretaceousApi.Controllers
             return View(await animals.AsNoTracking().ToListAsync());
         }*/
 
-        [Route("api/tryjson")]
+        [Route("api/tryjson")] //remember this route is api/animals/api/tryjson 
         [HttpGet]
         public ActionResult<IEnumerable<Animal>> Get(int pageNumber = 1, int resultsPerPage = 2)
         {

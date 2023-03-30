@@ -16,7 +16,7 @@ namespace CretaceousClient.Models
     public static async Task<string> GetAllWithPagination()
     {
       RestClient client = new RestClient("http://localhost:5133/");
-      RestRequest request = new RestRequest($"api/tryjson", Method.Get);
+      RestRequest request = new RestRequest($"api/Animals/api/tryjson", Method.Get);
       RestResponse response = await client.GetAsync(request);
       return response.Content;
     }
@@ -28,7 +28,7 @@ namespace CretaceousClient.Models
       RestResponse response = await client.GetAsync(request);
       return response.Content;
     }
-
+CretaceousApi.Solution/Controllers/AnimalsController.cs
     public static async void Post(string newAnimal)
     {
       RestClient client = new RestClient("http://localhost:5133/");
