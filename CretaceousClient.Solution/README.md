@@ -44,10 +44,11 @@ DELETE http://localhost:5000/api/animals/{id}<br>
 
 Note: The {id} in the URL is a variable and it should be replaced with the id number of the animal the user wants to GET, PUT, or DELETE.
 
-```
+pageNumber	    | int	| not required	| Returns a specified page number of query items<br> 
+resultsPerPage	| int	| not required	| Returns a specified number of query items per page
 
-  Parameter	|  Type   |	Required	    | Description
-* species	  | String	| not required	| Returns animals with a matching species value
+| species              | String           | not required   | Returns animals with a matching species value|<br> 
+
 ◊ GET http://localhost:5000/api/animals?species=[ENTER-MATCHING-SPECIES-VALUE]
 * name	    | String	| not required	 | Returns animals with a matching name value
 ◊ GET http://localhost:5000/api/animals?name=[ENTER-MATCHING-NAME-VALUE]
@@ -68,7 +69,7 @@ Note: The {id} in the URL is a variable and it should be replaced with the id nu
 
 http://localhost:5000/api/animals/1
 Notice that the value of animalId needs to match the id number in the URL. In this example, they are both 1.
-``` 
+
 
 ## How To Run This Project
 
