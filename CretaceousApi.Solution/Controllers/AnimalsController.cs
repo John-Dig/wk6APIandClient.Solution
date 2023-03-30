@@ -111,7 +111,7 @@ namespace CretaceousApi.Controllers
         }
 
         // PUT: api/Animals/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from over-posting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAnimal(int id, Animal animal)
         {
@@ -142,7 +142,7 @@ namespace CretaceousApi.Controllers
         }
 
         // POST: api/Animals
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from over-posting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Animal>> PostAnimal(Animal animal)
         {

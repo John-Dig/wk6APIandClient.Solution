@@ -11,9 +11,9 @@ public class AnimalsController : Controller
     return View(animals);
   }
   
-  public  IActionResult FullIndex()
+  public  IActionResult FullIndex(int pageFromClient = 1)
   {
-    List<Animal> animals = Animal.GetAnimalsWithPagination();
+    List<Animal> animals = Animal.GetAnimalsWithPagination(pageFromClient);
     return View(animals);
   }
 

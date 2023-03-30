@@ -26,10 +26,10 @@ namespace CretaceousClient.Models
       return animalList;
     }
 
-    public static List<Animal> GetAnimalsWithPagination()
+    public static List<Animal> GetAnimalsWithPagination(int pageFromClient)
     {
       // NOTE: we don't pass an API key as an argument to ApiHelper.GetAll();. Your personal API will not require a key unless you add Token-Based Authentication through your further exploration.
-      var apiCallTask = ApiHelper.GetAllWithPagination(); // ApiHelper class model will contain .GetAll() definition
+      var apiCallTask = ApiHelper.GetAllWithPagination(pageFromClient); // ApiHelper class model will contain .GetAll() definition
       var result = apiCallTask.Result;
 
       JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
