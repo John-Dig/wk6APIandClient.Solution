@@ -48,13 +48,15 @@ pageNumber	    | int	| not required	| Returns a specified page number of query i
 resultsPerPage	| int	| not required	| Returns a specified number of query items per page
 
 | species              | String           | not required   | Returns animals with a matching species value|<br> 
-
 ◊ GET http://localhost:5000/api/animals?species=[ENTER-MATCHING-SPECIES-VALUE]
 * name	    | String	| not required	 | Returns animals with a matching name value
+
 ◊ GET http://localhost:5000/api/animals?name=[ENTER-MATCHING-NAME-VALUE]
 * minimumAge | Number	| not required  | Returns animals that have an age value that is greater than or equal to the specified minimumAge value
 ◊GET http://localhost:5000/api/animals?minimumAge=[ENTER-MINIMUM-AGE-INTEGER-VALUE]
+
 * species&minimumAge | String & Number | neither required	| Returns animals with a matching species value and an age value that is greater than or equal to the specified minimumAge value
+
 ◊ GET http://localhost:5000/api/animals?species=[ENTER-MATCHING-SPECIES-VALUE]&minimumAge=[ENTER-MINIMUM-AGE-INTEGER-VALUE]
 
 ◊ POST request to http://localhost:5000/api/animals/, must have a JSON body included when being made. Here is an example body in JSON:
